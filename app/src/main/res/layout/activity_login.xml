@@ -25,15 +25,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
+            android:layout_marginBottom="10dp"
             android:text="@string/welcome_bac"
             android:textAppearance="@style/welcome_bac"
             android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:id="@+id/email"
-            android:layout_width="54dp"
-            android:layout_height="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/email"
             android:textAppearance="@style/email"
             android:gravity="center_horizontal|top"
@@ -63,7 +63,6 @@
             />
 
         <EditText
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_design"
@@ -72,7 +71,7 @@
             android:layout_marginTop="4dp"
             android:textAppearance="@style/email_text"
             android:hint="Enter your Password"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:textColorHint="#7A88B1">
         </EditText>
 
@@ -118,7 +117,7 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:textColor="@color/white"
-            android:textStyle="bold"
+
             android:textSize="16sp"
             android:layout_marginTop="10dp"
             android:background="@drawable/login_signup_button_bg"/>
@@ -173,7 +172,6 @@
             android:layout_height="wrap_content"
             android:text="Login with Facebook"
             android:textColor="@color/white"
-            android:textStyle="bold"
             android:textSize="16sp"
             android:drawableLeft="@drawable/facebook_logo"
             android:layout_marginTop="20dp"
@@ -184,7 +182,6 @@
             android:layout_height="wrap_content"
             android:text="Login with Google"
             android:textColor="@color/white"
-            android:textStyle="bold"
             android:textSize="16sp"
             android:drawableLeft="@drawable/google_logo"
             android:layout_marginTop="20dp"
