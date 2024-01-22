@@ -5,5 +5,6 @@
     <color name="dark_blue">#106293</color>
     <color name="middle_blue">#11B3CF</color>
     <color name="light_blue">#59D4E9</color>
+    <color name="edit_text_text_color">#695C5C</color>
 
 </resources>
