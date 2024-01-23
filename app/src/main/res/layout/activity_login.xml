@@ -48,6 +48,8 @@
             android:layout_marginTop="4dp"
             android:textAppearance="@style/email_text"
             android:hint="Enter your username"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="14dp"
             android:inputType="textEmailAddress"
             android:textColorHint="#7A88B1">
         </EditText>
@@ -72,6 +74,8 @@
             android:textAppearance="@style/email_text"
             android:hint="Enter your Password"
             android:inputType="textPassword"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="14dp"
             android:textColorHint="#7A88B1">
         </EditText>
 
