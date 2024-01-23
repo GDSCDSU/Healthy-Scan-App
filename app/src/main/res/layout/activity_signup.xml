@@ -187,7 +187,7 @@
 
 
             <TextView
-                android:id="@+id/sign_up"
+                android:id="@+id/already_acc_login_navigate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
