@@ -8,5 +8,6 @@
     <color name="edit_text_text_color">#695C5C</color>
     <color name="edit_text_stroke_color">#66000000</color>
     <color name="login_signup_icon_color">#695C5C</color>
+    <color name="Edit_text_text_color">#695C5C</color>
 
 </resources>

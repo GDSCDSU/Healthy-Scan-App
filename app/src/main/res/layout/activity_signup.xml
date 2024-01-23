@@ -40,6 +40,7 @@
             android:textAppearance="@style/email_text"
             android:hint="Enter your username"
             android:inputType="text"
+            android:textColor="@color/Edit_text_text_color"
             android:drawableStart="@drawable/username"
             android:drawablePadding="14dp"
             >
@@ -54,6 +55,7 @@
             android:textAppearance="@style/email_text"
             android:hint="@string/signup_email"
             android:inputType="textEmailAddress"
+            android:textColor="@color/Edit_text_text_color"
             android:drawableStart="@drawable/email"
             android:drawablePadding="14dp"
             >
@@ -68,6 +70,7 @@
             android:textAppearance="@style/email_text"
             android:hint="@string/signup_phone_no"
             android:inputType="number"
+            android:textColor="@color/Edit_text_text_color"
             android:drawableStart="@drawable/contact"
             android:drawablePadding="14dp"
             >
@@ -85,6 +88,7 @@
             android:drawableStart="@drawable/password"
             android:drawablePadding="14dp"
             android:inputType="textPassword"
+            android:textColor="@color/Edit_text_text_color"
             >
         </EditText>
 
