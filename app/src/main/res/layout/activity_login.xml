@@ -51,7 +51,8 @@
             android:drawableStart="@drawable/email"
             android:drawablePadding="14dp"
             android:inputType="textEmailAddress"
-            android:textColorHint="#7A88B1">
+            android:textColor="@color/Edit_text_text_color"
+            >
         </EditText>
 
         <TextView
@@ -72,11 +73,13 @@
 
             android:layout_marginTop="4dp"
             android:textAppearance="@style/email_text"
-            android:hint="Enter your Password"
+            android:hint="Enter your password"
             android:inputType="textPassword"
+            android:textColor="@color/Edit_text_text_color"
             android:drawableStart="@drawable/password"
             android:drawablePadding="14dp"
-            android:textColorHint="#7A88B1">
+
+            >
         </EditText>
 
         <LinearLayout
