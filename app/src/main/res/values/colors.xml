@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#106293</color>
+    <color name="middle_blue">#11B3CF</color>
+    <color name="light_blue">#59D4E9</color>
+    <color name="edit_text_text_color">#695C5C</color>
+    <color name="edit_text_stroke_color">#66000000</color>
+    <color name="login_signup_icon_color">#695C5C</color>
+    <color name="Edit_text_text_color">#695C5C</color>
+
 </resources>

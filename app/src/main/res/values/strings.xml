@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Healthy Scan</string>
+    <string name="welcome_bac">Welcome, back!</string>
+    <string name="email">Email</string>
+    <string name="signup_email">Enter your Email</string>
+    <string name="password">Password</string>
+    <string name="signup_password">Enter your Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="don_t_have_">Don’t have an account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_text">or with</string>
+    <string name="create_account">create an account</string>
+    <string name="signup_phone_no">Enter Your Phone Number</string>
+    <string name="signup_btn">Sign Up</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="Login">Login</string>
 </resources>
