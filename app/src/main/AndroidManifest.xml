@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Dashboard"
             android:exported="true"></activity>
     </application>
 
