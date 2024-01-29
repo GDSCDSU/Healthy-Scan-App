@@ -2,9 +2,13 @@ package com.healthyscan;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
@@ -17,6 +21,7 @@ public class Dashboard extends AppCompatActivity {
 
     MeowBottomNavigation bottomNavigation;
     RelativeLayout body_container;
+    FrameLayout container;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +35,11 @@ public class Dashboard extends AppCompatActivity {
         bottomNavigation.show(3, true);
 
         // add your bottom navigation icon here
-        bottomNavigation.add(new MeowBottomNavigation.Model(1,R.drawable.virtual_coach));
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.virtual_coach));
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.scan2));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3,R.drawable.home));
-        bottomNavigation.add(new MeowBottomNavigation.Model(4,R.drawable.location_map));
-        bottomNavigation.add(new MeowBottomNavigation.Model(5,R.drawable.todo_check));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.location_map));
+        bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.todo_check));
 
 
         bottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
@@ -42,31 +47,28 @@ public class Dashboard extends AppCompatActivity {
             public Unit invoke(MeowBottomNavigation.Model model) {
 
                 int id = model.getId();
-                if (id==1){
+                if (id == 1) {
                     bottom_Navigation_colors();
-                } else if (id==2) {
+
+                } else if (id == 2) {
                     bottom_Navigation_colors();
-                }
-                else if (id==3) {
+                } else if (id == 3) {
                     bottom_Navigation_home_colors();
-                }
-                else if (id==4) {
+
+                } else if (id == 4) {
                     bottom_Navigation_colors();
-                }
-                else if (id==5) {
+                } else if (id == 5) {
                     bottom_Navigation_colors();
                 }
 
                 return null;
             }
+
+
         });
 
-//        bottom_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                return true;
-//            }
-//        });
+        loadFragments(new HomeFragment(), true);
+
 
     }
 
@@ -87,6 +89,14 @@ public class Dashboard extends AppCompatActivity {
         bottomNavigation.setDefaultIconColor(getColor(R.color.dark_blue));
         body_container.setBackgroundColor(getColor(R.color.light_blue));
 
-
     }
+
+    private void loadFragments(Fragment fragment, boolean flag) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.add(R.id.container, fragment);
+        fragmentTransaction.commit();
+    }
+
 }
