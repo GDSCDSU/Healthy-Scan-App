@@ -9,98 +9,93 @@
     tools:context=".Signup">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:paddingStart="35dp"
-        android:paddingEnd="35dp"
         android:paddingTop="30dp"
-        android:paddingBottom="20dp"
-        android:orientation="vertical">
+        android:paddingEnd="35dp"
+        android:paddingBottom="20dp">
 
         <TextView
             android:id="@+id/welcome_bac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="10dp"
             android:text="@string/create_account"
-            android:textAppearance="@style/welcome_bac_and_create_account"
-            android:layout_gravity="center_horizontal"/>
+            android:textAppearance="@style/welcome_bac_and_create_account" />
 
 
         <EditText
-
+            android:id="@+id/input_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_design"
-            android:padding="15dp"
             android:layout_marginTop="4dp"
-            android:textAppearance="@style/email_text"
-            android:hint="Enter your username"
-            android:inputType="text"
-            android:textColor="@color/Edit_text_text_color"
+            android:background="@drawable/edit_text_design"
             android:drawableStart="@drawable/username"
             android:drawablePadding="14dp"
-            >
-        </EditText>
+            android:hint="Enter your username"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textAppearance="@style/email_text"
+            android:textColor="@color/Edit_text_text_color"></EditText>
 
         <EditText
+            android:id="@+id/input_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_design"
-            android:padding="15dp"
             android:layout_marginTop="20dp"
-            android:textAppearance="@style/email_text"
-            android:hint="@string/signup_email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/Edit_text_text_color"
+            android:background="@drawable/edit_text_design"
             android:drawableStart="@drawable/email"
             android:drawablePadding="14dp"
-            >
-        </EditText>
+            android:hint="@string/signup_email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textAppearance="@style/email_text"
+            android:textColor="@color/Edit_text_text_color"></EditText>
 
         <EditText
+            android:id="@+id/input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_design"
-            android:padding="15dp"
             android:layout_marginTop="20dp"
-            android:textAppearance="@style/email_text"
-            android:hint="@string/signup_phone_no"
-            android:inputType="number"
-            android:textColor="@color/Edit_text_text_color"
-            android:drawableStart="@drawable/contact"
-            android:drawablePadding="14dp"
-            >
-        </EditText>
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:background="@drawable/edit_text_design"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"
-            android:textAppearance="@style/email_text"
-            android:hint="@string/signup_password"
             android:drawableStart="@drawable/password"
             android:drawablePadding="14dp"
+            android:hint="@string/signup_phone_no"
             android:inputType="textPassword"
-            android:textColor="@color/Edit_text_text_color"
-            >
-        </EditText>
+            android:padding="15dp"
+            android:textAppearance="@style/email_text"
+            android:textColor="@color/Edit_text_text_color"></EditText>
+
+
+        <EditText
+            android:id="@+id/input_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_design"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="14dp"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textAppearance="@style/email_text"
+            android:textColor="@color/Edit_text_text_color"></EditText>
 
 
         <Button
+            android:id="@+id/signup_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/login_signup_button_bg"
             android:text="@string/signup_btn"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/login_signup_button_bg"/>
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -108,12 +103,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="35dp"
-        android:paddingEnd="35dp"
-        android:paddingTop="10dp"
         android:gravity="center"
-        android:paddingBottom="35dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingStart="35dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="35dp"
+        android:paddingBottom="35dp">
 
 
         <LinearLayout
@@ -124,24 +119,24 @@
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
-                android:background="#80000000"/>
+                android:layout_weight="1"
+                android:background="#80000000" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/or_text"
-                android:textAppearance="@style/or_text"
                 android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"/>
+                android:layout_marginEnd="15dp"
+                android:text="@string/or_text"
+                android:textAppearance="@style/or_text" />
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
-                android:background="#80000000"/>
+                android:layout_weight="1"
+                android:background="#80000000" />
 
 
         </LinearLayout>
@@ -149,51 +144,50 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_signup_button_bg"
+            android:drawableLeft="@drawable/facebook_logo"
             android:text="Login with Facebook"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            android:drawableLeft="@drawable/facebook_logo"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/login_signup_button_bg"/>
+            android:textSize="16sp" />
 
         <Button
+            android:id="@+id/SignupWithGoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_signup_button_bg"
+            android:drawableLeft="@drawable/google_logo"
             android:text="Login with Google"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            android:drawableLeft="@drawable/google_logo"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/login_signup_button_bg"/>
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:weightSum="2"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="2">
 
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/already_have_account"
+                android:gravity="top"
                 android:padding="5dp"
-                android:textAppearance="@style/don_t_have_"
-                android:gravity="top"/>
-
+                android:text="@string/already_have_account"
+                android:textAppearance="@style/don_t_have_" />
 
 
             <TextView
                 android:id="@+id/already_acc_login_navigate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="top"
                 android:padding="5dp"
                 android:text="@string/Login"
-                android:textAppearance="@style/sign_up"
-                android:gravity="top"/>
-
+                android:textAppearance="@style/sign_up" />
 
 
         </LinearLayout>

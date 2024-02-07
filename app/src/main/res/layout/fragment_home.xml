@@ -6,13 +6,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_blue"
-    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".HomeFragment">
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food"
+            android:contentDescription="@string/menu_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -20,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:baselineAligned="false"
             android:orientation="horizontal"
             android:paddingStart="10dp"
             android:paddingEnd="10dp">
@@ -48,20 +66,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text="Virtual " />
+                            android:paddingEnd="1dp"
+                            android:text="@string/virtual" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text="Health coach" />
+                            android:paddingEnd="1dp"
+                            android:text="@string/health_coach" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -73,7 +93,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/coachimage" />
+                            android:contentDescription="@string/virtual_coach_image"
+                            android:src="@drawable/coach_image" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -109,13 +130,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text="Easy" />
+                            android:paddingEnd="1dp"
+                            android:text="@string/easy" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text=" Report scan" />
+                            android:paddingEnd="1dp"
+                            android:text="@string/report_scan" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -127,7 +150,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/scanimage2" />
+                            android:contentDescription="@string/report_image"
+                            android:src="@drawable/scan_image2" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -141,6 +165,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:baselineAligned="false"
             android:orientation="horizontal"
             android:paddingStart="10dp"
             android:paddingEnd="10dp">
@@ -168,20 +193,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text="Set Your" />
+                            android:paddingEnd="1dp"
+                            android:text="@string/set_your" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text="Health Goals" />
+                            android:paddingEnd="1dp"
+                            android:text="@string/health_goals" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -193,6 +220,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:contentDescription="@string/health_golas_image"
                             android:src="@drawable/todoimage" />
                     </LinearLayout>
 
@@ -222,20 +250,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text="Doctors" />
+                            android:paddingEnd="1dp"
+                            android:text="@string/doctors" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="8dp"
-                            android:text="Near You" />
+                            android:paddingEnd="1dp"
+                            android:text="@string/near_you" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -247,7 +277,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/locationimage" />
+                            android:src="@drawable/locationimage"
+                            android:contentDescription="@string/location_image" />
                     </LinearLayout>
 
                 </LinearLayout>

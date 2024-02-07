@@ -39,6 +39,7 @@
 
         <EditText
 
+            android:id="@+id/loginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -49,7 +50,7 @@
             android:inputType="textEmailAddress"
             android:padding="15dp"
             android:textAppearance="@style/email_text"
-            android:textColor="@color/Edit_text_text_color"/>
+            android:textColor="@color/Edit_text_text_color" />
 
         <TextView
 
@@ -61,6 +62,8 @@
             android:textAppearance="@style/email" />
 
         <EditText
+
+            android:id="@+id/loginPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -71,7 +74,7 @@
             android:inputType="textPassword"
             android:padding="15dp"
             android:textAppearance="@style/email_text"
-            android:textColor="@color/Edit_text_text_color"/>
+            android:textColor="@color/Edit_text_text_color" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -112,7 +115,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/login_btn"
+            android:id="@+id/signInButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -177,6 +180,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/signInWithGoogleButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

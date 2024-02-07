@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home_drawable"
+            android:checked="true"
+            android:icon="@drawable/navigationhome"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_information_drawable"
+            android:icon="@drawable/information_button"
+            android:title="@string/information" />
+
+        <item
+            android:id="@+id/nav_settings_drawable"
+            android:icon="@drawable/baseline_settings_24"
+            android:title="@string/settings" />
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+
+            android:title="">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="@string/logout" />
+            </menu>
+
+        </item>
+    </group>
+
+</menu>
