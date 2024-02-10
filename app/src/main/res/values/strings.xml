@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Healthy Scan</string>
+    //Headings
+    <string name="heading_one">Just a scan away from understanding your own reports!</string>
+    <string name="heading_two">Find the nearest locations of healthcare centers and doctors for your health needs now</string>
+    <string name="heading_three">Set goals for yourself to stay healthy with healthy scan</string>
+
+
+
 </resources>

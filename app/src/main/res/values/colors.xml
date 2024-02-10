@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    //onboarding colors
+    <color name="background">#FBFBFD</color>
+    <color name="buttontext">#50C2C9</color>
+
+    //indicator color
+    <color name="inactive">#11B3CF</color>
+    <color name="active">#106293</color>
 </resources>
