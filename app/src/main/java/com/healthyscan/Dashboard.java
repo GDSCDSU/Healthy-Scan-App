@@ -101,8 +101,10 @@ public class Dashboard extends AppCompatActivity {
                 } else if (id == 2) {
                     bottom_Navigation_colors();
                 } else if (id == 3) {
+                    loadFragments(new HomeFragment(), false);
                     bottom_Navigation_home_colors();
                 } else if (id == 4) {
+                    loadFragments(new MapsFragment(), false);
                     bottom_Navigation_colors();
                 } else if (id == 5) {
                     bottom_Navigation_colors();
@@ -130,7 +132,7 @@ public class Dashboard extends AppCompatActivity {
         int itemId = item.getItemId();
 
         if (itemId == R.id.nav_home_drawable) {
-            loadFragments(new HomeFragment(), true);
+            loadFragments(new HomeFragment(), false);
         } else if (itemId == R.id.nav_settings_drawable) {
             // Handle settings click
             // Add your logic for handling settings here
@@ -187,8 +189,12 @@ public class Dashboard extends AppCompatActivity {
     private void loadFragments(Fragment fragment, boolean flag) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        fragmentTransaction.add(R.id.container, fragment);
+        if (flag) {
+            fragmentTransaction.add(R.id.container, fragment);
+        }
+        else {
+            fragmentTransaction.replace(R.id.container,fragment);
+        }
         fragmentTransaction.commit();
     }
 
