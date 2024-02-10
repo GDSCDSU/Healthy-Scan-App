@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "760625031138",
+    "project_id": "healthy-scan-c3d0d",
+    "storage_bucket": "healthy-scan-c3d0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760625031138:android:a718c6fe5e8cfcbfd03bbb",
+        "android_client_info": {
+          "package_name": "com.healthyscan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyQq78wfLwUOOZwfB8Iw6H2GgliKpL_gU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
