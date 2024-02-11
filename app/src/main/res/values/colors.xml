@@ -9,5 +9,7 @@
     <color name="edit_text_stroke_color">#66000000</color>
     <color name="login_signup_icon_color">#695C5C</color>
     <color name="Edit_text_text_color">#695C5C</color>
+    <color name="unselect_grey">#D1CECE</color>
+    <color name="grey">#9D9D9D</color>
 
 </resources>

@@ -36,5 +36,8 @@
     <string name="settings">Settings</string>
     <string name="logout">Logout</string>
     <string name="default_web_client_id">760625031138-99mv0o3m6cm0hha0js1sa0p980j44rq0.apps.googleusercontent.com</string>
+    <string name="heading_one">Just a scan away from understanding your own reports!</string>
+    <string name="heading_two">Find the nearest locations of healthcare centers and doctors for your health needs now</string>
+    <string name="heading_three">Set goals for yourself to stay healthy with healthy scan</string>
 
 </resources>
