@@ -109,6 +109,7 @@ public class Dashboard extends AppCompatActivity {
                     bottom_Navigation_colors();
                 } else if (id == 5) {
                     bottom_Navigation_colors();
+                    loadFragments(new goalsFragment(),false);
                 }
 
                 return null;
@@ -170,7 +171,7 @@ public class Dashboard extends AppCompatActivity {
     }
 
     private void bottom_Navigation_colors() {
-        bottomNavigation.setBackgroundBottomColor(getColor(R.color.light_blue));
+        bottomNavigation.setBackgroundBottomColor(getColor(R.color.dark_blue));
         bottomNavigation.setCircleColor(getColor(R.color.white));
         bottomNavigation.setSelectedIconColor(getColor(R.color.dark_blue));
         bottomNavigation.setDefaultIconColor(getColor(R.color.white));
