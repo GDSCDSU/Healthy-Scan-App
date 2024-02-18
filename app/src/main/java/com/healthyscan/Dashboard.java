@@ -99,6 +99,7 @@ public class Dashboard extends AppCompatActivity {
                 if (id == 1) {
                     bottom_Navigation_colors();
                 } else if (id == 2) {
+                    loadFragments(new ScannerFragment(),false);
                     bottom_Navigation_colors();
                 } else if (id == 3) {
                     loadFragments(new HomeFragment(), false);
