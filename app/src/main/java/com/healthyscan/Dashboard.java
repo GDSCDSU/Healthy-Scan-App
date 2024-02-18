@@ -97,19 +97,20 @@ public class Dashboard extends AppCompatActivity {
                 //handle bottom navigation click
                 int id = model.getId();
                 if (id == 1) {
+                    loadFragments(new AiCoachFragment(), false);  // for open ai coach screen
                     bottom_Navigation_colors();
                 } else if (id == 2) {
-                    loadFragments(new ScannerFragment(),false);
+                    loadFragments(new ScannerFragment(), false);  // for open scanner coach screen
                     bottom_Navigation_colors();
                 } else if (id == 3) {
-                    loadFragments(new HomeFragment(), false);
+                    loadFragments(new HomeFragment(), false);    // for open home / dashboard screen
                     bottom_Navigation_home_colors();
                 } else if (id == 4) {
-                    loadFragments(new MapsFragment(), false);
+                    loadFragments(new MapsFragment(), false);    // for open Maps screen
                     bottom_Navigation_colors();
                 } else if (id == 5) {
+                    loadFragments(new goalsFragment(), false);    // for open set goals screen
                     bottom_Navigation_colors();
-                    loadFragments(new goalsFragment(),false);
                 }
 
                 return null;
@@ -193,9 +194,8 @@ public class Dashboard extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         if (flag) {
             fragmentTransaction.add(R.id.container, fragment);
-        }
-        else {
-            fragmentTransaction.replace(R.id.container,fragment);
+        } else {
+            fragmentTransaction.replace(R.id.container, fragment);
         }
         fragmentTransaction.commit();
     }
