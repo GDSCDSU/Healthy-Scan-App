@@ -15,7 +15,7 @@ Over time, many people find it hard to understand their medical reports due to d
 "Studies suggest that improving health literacy could prevent nearly **1 million hospital visits** each year and save over **$25 billion.**"
 ## 🎥 Demo Video
 
-Video Link: [![Click to watch video](https://raw.githubusercontent.com/engineer-bisharat-ali/thumnail/main/Thumbnail.png)](https://youtu.be/IGZEmVKCN9M)
+Video Link: [![Click to watch video](https://raw.githubusercontent.com/engineer-bisharat-ali/thumbnail-image/main/Thumbnail.png)](https://youtu.be/IGZEmVKCN9M)
 
 ## 🛠️  Key Functionalities
 
